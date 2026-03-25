@@ -21,44 +21,47 @@
           <li>
             <a href="/music.html">Music</a>
           </li>
+          <li>
+            <a href="/form.html">Form</a>
+          </li>
+          <li><a href="/list.html">List</a></li>
         </ul>
       </div>
     </nav>
-
     <!-- 메인 섹션! -->
     <section class="main">
-          <!-- BGM 플레이어 : https://mmu-u.tistory.com/3 -->
-  <iframe src="\player\bgm.html" class="mm-bgm" allow="autoplay" allowfullscreen></iframe>
-  
-  <script>
-    window.addEventListener('message', function(event) {
-    // 필요시 수정
-    if (event.origin !== 'https://tistory1.daumcdn.net') return;
-    
-    // 요소 가져오기
-    const bgmonElement = document.querySelector('.mm-bgm');
-    if (!bgmonElement) return;
-    
-    // 메시지 처리
-    if (event.data.action === 'expand') {
-        //bgmonElement.style.transition = 'height 0.3s ease';
-        //bgmonElement.style.transition = 'width 0.3s ease';
-        bgmonElement.style.width = '224px';
-        bgmonElement.style.height = '152px';
-        
-    } 
-    else if (event.data.action === 'minimize') {
-        //bgmonElement.style.transition = 'height 0.3s ease';
-        //bgmonElement.style.transition = 'width 0.3s ease';
-        bgmonElement.style.width = '25px';
-        bgmonElement.style.height = '25px';
-    }
-});
-  </script>
-<!-- BGM 플레이어 끝-->
+      <!-- BGM 플레이어 : https://mmu-u.tistory.com/3 -->
+      <iframe
+        src="\player\bgm.html"
+        class="mm-bgm"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe>
 
+      <script>
+        window.addEventListener('message', function (event) {
+          // 필요시 수정
+          if (event.origin !== 'https://tistory1.daumcdn.net') return
+
+          // 요소 가져오기
+          const bgmonElement = document.querySelector('.mm-bgm')
+          if (!bgmonElement) return
+
+          // 메시지 처리
+          if (event.data.action === 'expand') {
+            //bgmonElement.style.transition = 'height 0.3s ease';
+            //bgmonElement.style.transition = 'width 0.3s ease';
+            bgmonElement.style.width = '224px'
+            bgmonElement.style.height = '152px'
+          } else if (event.data.action === 'minimize') {
+            //bgmonElement.style.transition = 'height 0.3s ease';
+            //bgmonElement.style.transition = 'width 0.3s ease';
+            bgmonElement.style.width = '25px'
+            bgmonElement.style.height = '25px'
+          }
+        })
+      </script>
+      <!-- BGM 플레이어 끝-->
     </section>
-
-
-
   </body>
+</html>

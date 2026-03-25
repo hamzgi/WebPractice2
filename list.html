@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 데모</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      table {
+        width: 100%;
+        table-layout: fixed; /* 핵심 */
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #000;
+        text-align: center;
+        padding: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo"><a href="/">웹 데모!</a></div>
+        <ul class="nav">
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/music.html">Music</a>
+          </li>
+          <li>
+            <a href="/form.html">Form</a>
+          </li>
+          <li><a href="/list.html">List</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--
+  <body>
+    <fieldset>
+      연습 영역
+      <ul style="list-style-type: circle">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <ul style="list-style-type: square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+      <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+      <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+      <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dd>- sweet cold drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+        <dt>Ade</dt>
+        <dd>Lemonade</dd>
+        <dd>mangoade</dd>
+      </dl>
+
+      <table>
+        <caption>
+          대학교
+        </caption>
+        <thead>
+          <tr>
+            <th>대학교</th>
+            <th>위치</th>
+            <th>나라</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>중부대</td>
+            <td>고양</td>
+            <td>한국</td>
+          </tr>
+          <tr>
+            <td>서울대</td>
+            <td>서울</td>
+            <td>한국</td>
+          </tr>
+          <tr>
+            <td>MIT</td>
+            <td>메사추세츠</td>
+            <td>미국</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>합계</td>
+            <td></td>
+            <td>3개 대학</td>
+          </tr>
+        </tfoot>
+      </table>
+    </fieldset>
+  -->
+    <table>
+      <caption>
+        강의시간표
+      </caption>
+      <thead>
+        <tr>
+          <th>시간</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+          <th>토</th>
+          <th>일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09:00</td>
+          <td></td>
+          <td>보안자료구조</td>
+          <td>서버구축및운영실습</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10:00</td>
+          <td></td>
+          <td>보안자료구조</td>
+          <td>서버구축및운영실습</td>
+          <td></td>
+          <td></td>
+          <td>4차산업혁명시대의공학탐색</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11:00</td>
+          <td></td>
+          <td>웹프로그래밍</td>
+          <td>객체지향프로그래밍</td>
+          <td>EFGC3</td>
+          <td></td>
+          <td>4차산업혁명시대의공학탐색</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12:00</td>
+          <td></td>
+          <td>웹프로그래밍</td>
+          <td>객체지향프로그래밍</td>
+          <td>EFGC3</td>
+          <td></td>
+          <td>4차산업혁명시대의공학탐색</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14:00</td>
+          <td>보안자료구조</td>
+          <td>서버구축및운영실습</td>
+          <td></td>
+          <td>네트워크보안</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>15:00</td>
+          <td>보안자료구조</td>
+          <td>서버구축및운영실습</td>
+          <td></td>
+          <td>네트워크보안</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16:00</td>
+          <td>웹프로그래밍</td>
+          <td>객체지향프로그래밍</td>
+          <td></td>
+          <td>네트워크보안</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>17:00</td>
+          <td>웹프로그래밍</td>
+          <td>객체지향프로그래밍</td>
+          <td></td>
+          <td>네트워크보안</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>총 강의 수</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
