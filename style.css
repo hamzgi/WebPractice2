@@ -101,3 +101,58 @@ button:hover {
   /* 글간격 */
   line-height: 2.5;
 }
+
+.table-wrapper {
+  width: 820px;
+  margin: 30px auto;
+
+  border-radius: 20px;
+  overflow: hidden; /* 둥글게 잘림 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+td,
+th {
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  height: 60px;
+}
+th:hover {
+  filter: brightness(0.95);
+}
+
+/* 과목별 색상 */
+.ds {
+  background-color: #f3e5ab; /* 연노랑 */
+}
+
+.server {
+  background-color: #cfe8e0; /* 연청록 */
+}
+
+.web {
+  background-color: #cfd8e6; /* 연파랑 */
+}
+
+.oop {
+  background-color: #e8d8c3; /* 베이지 */
+}
+
+.eng {
+  background-color: #f3d6d6; /* 연핑크 */
+}
+
+.network {
+  background-color: #dce8b5; /* 연연두 */
+}
+
+.future {
+  background-color: #e6dede; /* 회색 */
+}
