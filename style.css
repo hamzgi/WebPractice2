@@ -24,12 +24,6 @@ ul {
   padding: 30px 30px;
 }
 
-.main {
-  color: blue;
-  /* 글간격 */
-  line-height: 2.5;
-}
-
 .navbar {
   background-color: black;
   color: white;
@@ -96,4 +90,14 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.main {
+  height: 80vh; /* 화면 높이 기준 */
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center; /* 세로 중앙 */
+  color: blue;
+  /* 글간격 */
+  line-height: 2.5;
 }
