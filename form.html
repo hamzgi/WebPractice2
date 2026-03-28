@@ -30,7 +30,45 @@
       </div>
     </nav>
 
-    <form action=""></form>
+    <div class="form-wrapper">
+      <form action="">
+        <h2>사용자 정보</h2>
+
+        <div class="form-group">
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="birthdate">생년월일:</label>
+          <input type="date" id="birthdate" name="birthdate" />
+        </div>
+
+        <div class="form-group">
+          <label>성별:</label>
+          <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="남" />
+            <label for="male">남</label>
+            <input type="radio" id="female" name="gender" value="여" />
+            <label for="female">여</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="grade">학년:</label>
+          <select id="grade" name="grade">
+            <option value="">선택하세요</option>
+            <option value="1">1학년</option>
+            <option value="2">2학년</option>
+            <option value="3">3학년</option>
+            <option value="4">4학년</option>
+          </select>
+        </div>
+
+        <button type="submit">제출</button>
+        <button type="reset">초기화</button>
+      </form>
+    </div>
   </body>
 </html>
 

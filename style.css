@@ -149,6 +149,77 @@ th:hover {
   background-color: #f3d6d6; /* 연핑크 */
 }
 
+/* Form Styles */
+.form-wrapper {
+  width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #f9f5f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form-wrapper h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input[type='text'],
+.form-group input[type='date'],
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-group input[type='text']:focus,
+.form-group input[type='date']:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-group input[type='radio'] {
+  margin-right: 5px;
+}
+
+.form-wrapper button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #cfd8e6;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-wrapper button:hover {
+  background-color: #b8c5d6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 .network {
   background-color: #dce8b5; /* 연연두 */
 }
