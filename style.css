@@ -88,18 +88,64 @@ button:hover {
 
 .profile {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.profile img {
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
 }
 
 .main {
-  height: 80vh; /* 화면 높이 기준 */
+  min-height: 80vh; /* 화면 높이 기준 */
   display: flex;
   justify-content: center; /* 가로 중앙 */
   align-items: center; /* 세로 중앙 */
-  color: blue;
-  /* 글간격 */
-  line-height: 2.5;
+  color: #333;
+  line-height: 1.8;
+  padding: 40px 0;
+}
+
+.content-wrapper {
+  width: 820px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #f9f5f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.content-wrapper h1,
+.content-wrapper h2,
+.content-wrapper h3 {
+  color: #333;
+}
+
+.content-wrapper p {
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.content-wrapper a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-wrapper a:hover {
+  color: #555;
+}
+
+.content-wrapper audio {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  background: #f1f1f1;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .table-wrapper {
